@@ -75,6 +75,7 @@ class MTableEditField extends React.Component {
                 }}
                 inputProps={{
                   "aria-label": this.props.columnDef.title,
+                  ...this.props.columnDef.inputProps,
                 }}
               />
             }
@@ -106,6 +107,7 @@ class MTableEditField extends React.Component {
           }}
           inputProps={{
             "aria-label": `${this.props.columnDef.title}: press space to edit`,
+            ...this.props.columnDef.inputProps,
           }}
         />
       </MuiPickersUtilsProvider>
@@ -123,10 +125,11 @@ class MTableEditField extends React.Component {
           InputProps={{
             style: {
               fontSize: 13,
-            }
+            },
           }}
           inputProps={{
             "aria-label": `${this.props.columnDef.title}: press space to edit`,
+            ...this.props.columnDef.inputProps,
           }}
         />
       </MuiPickersUtilsProvider>
@@ -145,10 +148,11 @@ class MTableEditField extends React.Component {
           InputProps={{
             style: {
               fontSize: 13,
-            }
+            },
           }}
           inputProps={{
             "aria-label": `${this.props.columnDef.title}: press space to edit`,
+            ...this.props.columnDef.inputProps,
           }}
         />
       </MuiPickersUtilsProvider>
@@ -178,10 +182,11 @@ class MTableEditField extends React.Component {
         InputProps={{
           style: {
             fontSize: 13,
-          }
+          },
         }}
         inputProps={{
           "aria-label": this.props.columnDef.title,
+          ...this.props.columnDef.inputProps,
         }}
       />
     );
@@ -208,10 +213,11 @@ class MTableEditField extends React.Component {
           style: {
             fontSize: 13,
             textAlign: "right",
-          }
+          },
         }}
         inputProps={{
           "aria-label": this.props.columnDef.title,
+          ...this.props.columnDef.inputProps,
         }}
         onKeyDown={this.props.onKeyDown}
         autoFocus={this.props.autoFocus}

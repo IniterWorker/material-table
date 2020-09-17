@@ -129,6 +129,7 @@ export interface EditComponentProps<RowData extends object> {
 export interface EditCellColumnDef {
   field: string;
   title: string;
+  inputProps: object;
   tableData: {
     columnOrder: number;
     filterValue: any;
